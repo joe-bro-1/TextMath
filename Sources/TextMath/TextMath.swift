@@ -6,7 +6,7 @@
 /// - Solves arithmetic expressions
 /// - Supports multiple operator representations
 /// - Provides a robust foundation for mathematical computation
-struct Calculator<NumberType: Numeric & LosslessStringConvertible> {
+struct Calculator<NumberType: Numeric & LosslessStringConvertible & BinaryFloatingPoint> {
     public func evaluate(_ expression: String) -> NumberType {
         #warning("Incomplete")
         return 5
